@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Jing Cheng is an assistant professor at Peking University. Her work spans agricultural and land systems, integrated assessment, and climate and air pollution mitigation.">
+  <meta name="theme-color" content="#fbfaf6">
+  <title>Jing Cheng | Peking University</title>
+  <style>
+    :root{color-scheme:light;--page:#fbfaf6;--ink:#17352f;--copy:#334740;--quiet:#52645d;--line:#d7ddd5;--link:#225b49;--accent:#9b4d36;--white:#fffefa;--tool:#173e34;--tool-copy:#dae7dc;--sans:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;--serif:Georgia,"Times New Roman",serif}
+    *,*::before,*::after{box-sizing:border-box}
+    html{scroll-behavior:smooth;scroll-padding-top:1.5rem}
+    body{margin:0;background:var(--page);color:var(--copy);font:1rem/1.7 var(--sans)}
+    a{color:var(--link);text-underline-offset:.24em;text-decoration-thickness:.07em}
+    a:hover{color:var(--accent)}
+    a:focus-visible{outline:2px solid #af614a;outline-offset:.28rem;border-radius:.125rem}
+    .wrap{max-width:76rem;margin-inline:auto;padding-inline:clamp(1.1rem,4.6vw,4.6rem)}
+    .skip{position:absolute;inset:1rem auto auto 1rem;transform:translateY(-180%);background:var(--white);padding:.65rem 1rem;z-index:5}
+    .skip:focus{transform:none}
+    .topbar{border-bottom:1px solid var(--line)}
+    .topbar-inner{min-height:4.55rem;display:flex;align-items:center;justify-content:space-between;gap:1rem 2rem;padding-block:.75rem}
+    .name-link{color:var(--ink);font:700 1.1rem/1.35 var(--serif);text-decoration:none;white-space:nowrap}
+    nav ul,.profile-links{display:flex;flex-wrap:wrap;gap:.3rem 1.35rem;padding:0;margin:0;list-style:none}
+    nav a{display:inline-block;color:var(--quiet);font-size:.875rem;font-weight:650;text-decoration:none;padding:.24rem 0}
+    nav a:hover{text-decoration:underline}
+    .hero{display:grid;grid-template-columns:minmax(0,1.55fr) minmax(0,.85fr);align-items:center;gap:2rem;border-bottom:1px solid var(--line);padding-block:clamp(3rem,8vw,6.7rem)}
+    h1,h2,h3,p{margin:0}
+    h1,h2,h3{color:var(--ink)}
+    h1{font:400 clamp(3.5rem,9vw,7.1rem)/.99 var(--serif);letter-spacing:-.065em;margin-left:-.045em}
+    h2{font:400 clamp(2.15rem,4vw,3.2rem)/1.08 var(--serif);letter-spacing:-.04em}
+    .eyebrow{color:var(--accent);font-size:.875rem;line-height:1.45;font-weight:750;text-transform:uppercase;letter-spacing:.13em;margin-bottom:1.1rem}
+    .role{color:var(--ink);font-weight:680;line-height:1.48;font-size:clamp(1.05rem,1.8vw,1.22rem);margin-top:1.45rem}
+    .institution{color:var(--quiet);line-height:1.55;max-width:32rem;margin-top:.3rem}
+    .profile-links{margin-top:1.45rem}
+    .profile-links a{font-weight:650;font-size:.875rem;display:inline-block;padding:.2rem 0}
+    .hero-art{width:100%;height:auto;display:block;align-self:center}
+    .section{display:grid;grid-template-columns:minmax(0,.65fr) minmax(0,1.35fr);gap:1.45rem clamp(1.75rem,6vw,6.3rem);padding-block:clamp(2.6rem,5vw,4.25rem);border-bottom:1px solid var(--line)}
+    .section p+p{margin-top:.85rem}
+    .section-content{max-width:49rem;min-width:0}
+    .research-list,.papers{list-style:none;padding:0;margin:0}
+    .research-list>li+li,.papers>li+li{border-top:1px solid var(--line)}
+    .research-list>li,.papers>li{padding-block:1.12rem}
+    .research-list>li:first-child,.papers>li:first-child{padding-top:0}
+    .research-list>li:last-child,.papers>li:last-child{padding-bottom:0}
+    .research-list h3{font-size:1.025rem;margin-bottom:.25rem}
+    .paper-title{font:400 clamp(1.24rem,2.2vw,1.52rem)/1.3 var(--serif);margin-bottom:.42rem}
+    .paper-title a{color:var(--ink);text-decoration:none}
+    .paper-title a:hover{text-decoration:underline;color:var(--accent)}
+    .paper-meta{font-size:.9rem;color:var(--quiet);line-height:1.56}
+    .paper-meta strong{color:var(--ink)}
+    .paper-role{display:block;margin-top:.24rem;color:var(--link);font-weight:660}
+    .tool{margin-block:clamp(2rem,4.8vw,3.6rem);padding:clamp(1.15rem,4vw,2.45rem);border-radius:.7rem;background:var(--tool);color:var(--tool-copy);display:grid;grid-template-columns:minmax(0,1fr) auto;align-items:center;gap:1rem 2rem}
+    .tool .eyebrow{color:#f4c6b3;margin-bottom:.45rem}
+    .tool h2{color:#fffefa;font-size:clamp(1.8rem,4vw,2.55rem);margin-bottom:.55rem}
+    .tool p{max-width:40rem}
+    .tool-link{color:#fffefa;border:1px solid #a1b9aa;display:inline-block;padding:.57rem .9rem;border-radius:.35rem;text-decoration:none;font-size:.9rem;font-weight:670;white-space:nowrap}
+    .tool-link:hover{color:var(--tool);background:#fffefa}
+    .footer{border-top:1px solid var(--line)}
+    .footer-inner{display:flex;justify-content:space-between;flex-wrap:wrap;gap:.5rem 1.4rem;padding-block:1.35rem;color:var(--quiet);font-size:.875rem}
+    @media(max-width:47rem){.hero{grid-template-columns:minmax(0,1fr) minmax(0,.53fr);gap:1rem}.section{grid-template-columns:minmax(0,1fr)}}
+    @media(max-width:37rem){.topbar-inner{align-items:flex-start;flex-direction:column;gap:.4rem}.hero{grid-template-columns:minmax(0,1fr)}.hero-art{display:none}.tool{grid-template-columns:minmax(0,1fr)}.tool-link{justify-self:start}}
+    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+  </style>
+</head>
+<body id="top">
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="topbar">
+    <div class="wrap topbar-inner">
+      <a class="name-link" href="#top">Jing Cheng</a>
+      <nav aria-label="Main navigation">
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#research">Research</a></li>
+          <li><a href="#publications">Publications</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap" id="main">
+    <section class="hero" aria-labelledby="name">
+      <div>
+        <p class="eyebrow">Climate, Land &amp; Air Quality</p>
+        <h1 id="name">Jing Cheng</h1>
+        <p class="role">Assistant Professor · Doctoral Supervisor</p>
+        <p class="institution">College of Environmental Sciences and Engineering,<br>Peking University</p>
+        <ul class="profile-links" aria-label="Academic and professional profiles">
+          <li><a href="https://scholar.pku.edu.cn/jingcheng">PKU Scholars</a></li>
+          <li><a href="https://scholar.google.com/citations?user=m0cvwX8AAAAJ&amp;hl=en">Google Scholar</a></li>
+          <li><a href="https://www.linkedin.com/in/jing-cheng-412196325/">LinkedIn</a></li>
+        </ul>
+      </div>
+      <svg class="hero-art" viewBox="0 0 400 290" fill="none" aria-hidden="true" focusable="false">
+        <defs><clipPath id="terrain-frame"><rect x="15" y="14" width="369" height="260" rx="16"/></clipPath></defs>
+        <g clip-path="url(#terrain-frame)">
+          <rect x="15" y="14" width="369" height="260" fill="#e9eee5"/>
+          <circle cx="291" cy="96" r="42" fill="#e4c0ae"/>
+          <path d="M-11 166C52 130 106 141 166 177S279 226 418 160V300H-11Z" fill="#d4e0d3"/>
+          <path d="M-10 225C63 225 104 155 177 159S278 261 421 214V300H-10Z" fill="#b9d0bf"/>
+          <g stroke="#547665" stroke-width="1.28" opacity=".91">
+            <path d="M2 254c77 6 102-78 177-78s110 96 222 62"/>
+            <path d="M-1 267c76 5 105-74 178-74 72 0 115 81 226 57"/>
+            <path d="M-3 279c80 3 111-70 180-70 66 0 114 67 224 53"/>
+            <path d="M-1 289c78 0 115-65 178-65 63 0 114 56 224 50"/>
+            <path d="M15 133c45-17 96-19 142 3 44 20 96 49 165 32 20-5 46-16 65-28"/>
+            <path d="M15 120c51-20 103-15 149 7 49 23 102 42 155 28 24-7 49-19 68-31"/>
+            <path d="M15 107c48-17 97-16 149 8 43 20 97 40 151 27 26-6 53-23 72-35"/>
+          </g>
+          <path d="M33 47h43M33 57h26" stroke="#668675" stroke-width="1.2" stroke-linecap="round"/>
+        </g>
+      </svg>
+    </section>
+
+    <section class="section" id="about" aria-labelledby="about-title">
+      <h2 id="about-title">About</h2>
+      <div class="section-content">
+        <p>I am an assistant professor at Peking University. I study how changes in agriculture, land use, and energy systems affect emissions, air quality, and human health.</p>
+        <p>Before joining Peking University, I was a postdoctoral scholar with Stanford University’s Sustainable Solutions Lab. <a href="https://cese.pku.edu.cn/szdw/zzjs/jxgz/index.htm">PKU faculty directory</a></p>
+      </div>
+    </section>
+
+    <section class="section" id="research" aria-labelledby="research-title">
+      <h2 id="research-title">Research</h2>
+      <ul class="section-content research-list">
+        <li><h3>Agriculture and land systems</h3><p>Emissions mitigation, resilience under climate change, and coordinated management across air, water, and soil.</p></li>
+        <li><h3>Energy and land-use transitions</h3><p>Integrated assessment of how low-emissions pathways reshape resource use, trade, and energy security.</p></li>
+        <li><h3>Climate, air quality, and health</h3><p>How climate and clean-air policies alter pollution exposure and its health impacts, and how those benefits are distributed.</p></li>
+      </ul>
+    </section>
+
+    <section class="section" id="publications" aria-labelledby="publications-title">
+      <h2 id="publications-title">Selected publications</h2>
+      <ol class="section-content papers">
+        <li>
+          <h3 class="paper-title"><a href="https://doi.org/10.1038/s41558-026-02675-0">Residual emissions may perpetuate community-scale inequalities in US air pollution</a></h3>
+          <p class="paper-meta">Bergero, C., <strong>Cheng, J.</strong>, et al. · <em>Nature Climate Change</em> 16, 922–930 (2026)<span class="paper-role">Co-corresponding author</span></p>
+        </li>
+        <li>
+          <h3 class="paper-title"><a href="https://doi.org/10.1038/s41558-025-02305-1">Trade risks to energy security in net-zero emissions energy scenarios</a></h3>
+          <p class="paper-meta"><strong>Cheng, J.</strong>, et al. · <em>Nature Climate Change</em> 15, 505–513 (2025)</p>
+        </li>
+        <li>
+          <h3 class="paper-title"><a href="https://doi.org/10.1016/j.oneear.2023.07.007">A synergistic approach to air pollution control and carbon neutrality in China can avoid millions of premature deaths annually by 2060</a></h3>
+          <p class="paper-meta"><strong>Cheng, J.</strong>, et al. · <em>One Earth</em> 6, 978–989 (2023)</p>
+        </li>
+      </ol>
+    </section>
+
+    <aside class="tool" aria-labelledby="tool-title">
+      <div>
+        <p class="eyebrow">Companion research tool</p>
+        <h2 id="tool-title">Air pollution at net-zero</h2>
+        <p>Explore how US net-zero pathways change exposure to fine particulate matter across communities.</p>
+      </div>
+      <a class="tool-link" href="https://sustainablesolutions.stanford.edu/tools/just-air">Explore the tool</a>
+    </aside>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap footer-inner">
+      <span>Jing Cheng · Peking University</span>
+      <a href="#top">Back to top</a>
+    </div>
+  </footer>
+</body>
+</html>
