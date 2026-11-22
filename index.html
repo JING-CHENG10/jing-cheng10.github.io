@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Jing Cheng is an assistant professor at Peking University. Her work spans agricultural and land systems, integrated assessment, and climate and air pollution mitigation.">
+  <meta name="description" content="Jing Cheng, assistant professor at Peking University. Research on agriculture and land systems, climate mitigation and resilience, and air quality and health. Publications, research tools, and a short CV.">
   <meta name="theme-color" content="#fbfaf6">
   <title>Jing Cheng | Peking University</title>
   <style>
@@ -24,8 +24,8 @@
     nav a{display:inline-block;color:var(--quiet);font-size:.875rem;font-weight:650;text-decoration:none;padding:.24rem 0}
     nav a:hover{text-decoration:underline}
     .hero{display:grid;grid-template-columns:minmax(0,1.55fr) minmax(0,.85fr);align-items:center;gap:2rem;border-bottom:1px solid var(--line);padding-block:clamp(3rem,8vw,6.7rem)}
-    h1,h2,h3,p{margin:0}
-    h1,h2,h3{color:var(--ink)}
+    h1,h2,h3,h4,p{margin:0}
+    h1,h2,h3,h4{color:var(--ink)}
     h1{font:400 clamp(3.5rem,9vw,7.1rem)/.99 var(--serif);letter-spacing:-.065em;margin-left:-.045em}
     h2{font:400 clamp(2.15rem,4vw,3.2rem)/1.08 var(--serif);letter-spacing:-.04em}
     .eyebrow{color:var(--accent);font-size:.875rem;line-height:1.45;font-weight:750;text-transform:uppercase;letter-spacing:.13em;margin-bottom:1.1rem}
@@ -49,6 +49,21 @@
     .paper-meta{font-size:.9rem;color:var(--quiet);line-height:1.56}
     .paper-meta strong{color:var(--ink)}
     .paper-role{display:block;margin-top:.24rem;color:var(--link);font-weight:660}
+    .subhead{font:400 1.48rem/1.3 var(--serif);margin-bottom:1.15rem}
+    .section-content .subhead.section-divider{border-top:1px solid var(--line);margin-top:2rem;padding-top:1.6rem}
+    .resource-list,.timeline{list-style:none;margin:0;padding:0}
+    .resource-list>li+li,.timeline>li+li{border-top:1px solid var(--line)}
+    .resource-list>li,.timeline>li{padding-block:.95rem}
+    .resource-list>li:first-child,.timeline>li:first-child{padding-top:0}
+    .resource-list>li:last-child,.timeline>li:last-child{padding-bottom:0}
+    .resource-list a{font-weight:650}
+    .resource-list p{font-size:.94rem;margin-top:.18rem}
+    .resource-kind{display:block;color:var(--accent);font-size:.875rem;font-weight:750}
+    .timeline>li{display:grid;grid-template-columns:8.5rem minmax(0,1fr);gap:.15rem 1rem}
+    .timeline-date{color:var(--accent);font-size:.875rem;font-weight:700;padding-top:.1rem}
+    .timeline-title{font-size:1.025rem;font-weight:670}
+    .timeline-detail{display:block;font-size:.94rem;color:var(--quiet)}
+    .cv-download{display:inline-block;margin-top:1.5rem;font-weight:650}
     .tool{margin-block:clamp(2rem,4.8vw,3.6rem);padding:clamp(1.15rem,4vw,2.45rem);border-radius:.7rem;background:var(--tool);color:var(--tool-copy);display:grid;grid-template-columns:minmax(0,1fr) auto;align-items:center;gap:1rem 2rem}
     .tool .eyebrow{color:#f4c6b3;margin-bottom:.45rem}
     .tool h2{color:#fffefa;font-size:clamp(1.8rem,4vw,2.55rem);margin-bottom:.55rem}
@@ -58,7 +73,7 @@
     .footer{border-top:1px solid var(--line)}
     .footer-inner{display:flex;justify-content:space-between;flex-wrap:wrap;gap:.5rem 1.4rem;padding-block:1.35rem;color:var(--quiet);font-size:.875rem}
     @media(max-width:47rem){.hero{grid-template-columns:minmax(0,1fr) minmax(0,.53fr);gap:1rem}.section{grid-template-columns:minmax(0,1fr)}}
-    @media(max-width:37rem){.topbar-inner{align-items:flex-start;flex-direction:column;gap:.4rem}.hero{grid-template-columns:minmax(0,1fr)}.hero-art{display:none}.tool{grid-template-columns:minmax(0,1fr)}.tool-link{justify-self:start}}
+    @media(max-width:37rem){.topbar-inner{align-items:flex-start;flex-direction:column;gap:.4rem}nav ul{gap:.2rem .95rem}.hero{grid-template-columns:minmax(0,1fr)}.hero-art{display:none}.tool{grid-template-columns:minmax(0,1fr)}.tool-link{justify-self:start}.timeline>li{grid-template-columns:minmax(0,1fr)}}
     @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
   </style>
 </head>
@@ -71,7 +86,8 @@
         <ul>
           <li><a href="#about">About</a></li>
           <li><a href="#research">Research</a></li>
-          <li><a href="#publications">Publications</a></li>
+          <li><a href="#outputs">Research Outputs</a></li>
+          <li><a href="#cv">CV</a></li>
         </ul>
       </nav>
     </div>
@@ -87,7 +103,7 @@
         <ul class="profile-links" aria-label="Academic and professional profiles">
           <li><a href="https://scholar.pku.edu.cn/jingcheng">PKU Scholars</a></li>
           <li><a href="https://scholar.google.com/citations?user=m0cvwX8AAAAJ&amp;hl=en">Google Scholar</a></li>
-          <li><a href="https://www.linkedin.com/in/jing-cheng-412196325/">LinkedIn</a></li>
+          <li><a href="https://orcid.org/0000-0003-0021-4335">ORCID</a></li>
         </ul>
       </div>
       <svg class="hero-art" viewBox="0 0 400 290" fill="none" aria-hidden="true" focusable="false">
@@ -114,23 +130,27 @@
     <section class="section" id="about" aria-labelledby="about-title">
       <h2 id="about-title">About</h2>
       <div class="section-content">
-        <p>I am an assistant professor at Peking University. I study how changes in agriculture, land use, and energy systems affect emissions, air quality, and human health.</p>
-        <p>Before joining Peking University, I was a postdoctoral scholar with Stanford University’s Sustainable Solutions Lab. <a href="https://cese.pku.edu.cn/szdw/zzjs/jxgz/index.htm">PKU faculty directory</a></p>
+        <p>I am an assistant professor and doctoral supervisor in the Department of Environmental Management at Peking University. I study how agricultural, land-use, and energy transitions affect emissions, air quality, and human health.</p>
+        <p>My PKU research program examines how carbon, reactive nitrogen, and reactive organic compounds move and transform across soils, vegetation, the atmosphere, and water. I use this process understanding to assess mitigation, adaptation, and management strategies for agricultural and food systems.</p>
+        <p><a href="https://scholar.pku.edu.cn/jingcheng">PKU Scholars profile</a> (Chinese) · <a href="https://cese.pku.edu.cn/szdw/zzjs/jxgz/index.htm">PKU faculty directory</a></p>
       </div>
     </section>
 
     <section class="section" id="research" aria-labelledby="research-title">
       <h2 id="research-title">Research</h2>
       <ul class="section-content research-list">
-        <li><h3>Agriculture and land systems</h3><p>Emissions mitigation, resilience under climate change, and coordinated management across air, water, and soil.</p></li>
-        <li><h3>Energy and land-use transitions</h3><p>Integrated assessment of how low-emissions pathways reshape resource use, trade, and energy security.</p></li>
-        <li><h3>Climate, air quality, and health</h3><p>How climate and clean-air policies alter pollution exposure and its health impacts, and how those benefits are distributed.</p></li>
+        <li><h3>Carbon and pollution across agricultural landscapes</h3><p>Study how soils, vegetation, air, and water exchange carbon and pollutants, and how these processes respond to management and climate change.</p></li>
+        <li><h3>Food-system resilience and decarbonization</h3><p>Assess risks from climate extremes and identify ways to cut emissions across the food supply chain while protecting production. Evaluate trade-offs across climate, environmental, health, and food-system goals.</p></li>
+        <li><h3>Land-use transitions, resource constraints, and wildfire risk</h3><p>Develop integrated land-use assessment models to examine how climate and land-use change shape wildfire risk, and how energy infrastructure, mining, and carbon removal affect land and ecosystems.</p></li>
+        <li><h3>Climate mitigation, air quality, and health</h3><p>Quantify the effects of climate and clean-air policies on emissions and pollution exposure, and identify who benefits from those changes.</p></li>
       </ul>
     </section>
 
-    <section class="section" id="publications" aria-labelledby="publications-title">
-      <h2 id="publications-title">Selected publications</h2>
-      <ol class="section-content papers">
+    <section class="section" id="outputs" aria-labelledby="outputs-title">
+      <h2 id="outputs-title">Research Outputs</h2>
+      <div class="section-content">
+      <h3 class="subhead" id="publications">Selected publications</h3>
+      <ol class="papers" aria-labelledby="publications">
         <li>
           <h3 class="paper-title"><a href="https://doi.org/10.1038/s41558-026-02675-0">Residual emissions may perpetuate community-scale inequalities in US air pollution</a></h3>
           <p class="paper-meta">Bergero, C., <strong>Cheng, J.</strong>, et al. · <em>Nature Climate Change</em> 16, 922–930 (2026)<span class="paper-role">Co-corresponding author</span></p>
@@ -140,10 +160,36 @@
           <p class="paper-meta"><strong>Cheng, J.</strong>, et al. · <em>Nature Climate Change</em> 15, 505–513 (2025)</p>
         </li>
         <li>
+          <h3 class="paper-title"><a href="https://doi.org/10.1038/s41586-025-09266-7">Strategies for climate-resilient global wind and solar power systems</a></h3>
+          <p class="paper-meta">Zheng, D., et al. · <em>Nature</em> 643, 1263–1270 (2025)</p>
+        </li>
+        <li>
+          <h3 class="paper-title"><a href="https://doi.org/10.1073/pnas.2513194122">Strategy for coordinating near-term PM<sub>2.5</sub>, ozone, and CO<sub>2</sub> mitigation in China</a></h3>
+          <p class="paper-meta">Liu, Y., et al. · <em>Proceedings of the National Academy of Sciences</em> 122, e2513194122 (2025)</p>
+        </li>
+        <li>
+          <h3 class="paper-title"><a href="https://doi.org/10.1038/s41893-024-01271-4">Co-benefits of transport demand reductions from compact urban development in Chinese cities</a></h3>
+          <p class="paper-meta">Fu, X., <strong>Cheng, J.</strong>, et al. · <em>Nature Sustainability</em> 7, 294–304 (2024)</p>
+        </li>
+        <li>
+          <h3 class="paper-title"><a href="https://doi.org/10.1007/s11430-023-1230-3">MEIC-global-CO<sub>2</sub>: A new global CO<sub>2</sub> emission inventory with highly-resolved source category and sub-country information</a></h3>
+          <p class="paper-meta">Xu, R., et al. · <em>Science China Earth Sciences</em> 67, 450–465 (2024)</p>
+        </li>
+        <li>
           <h3 class="paper-title"><a href="https://doi.org/10.1016/j.oneear.2023.07.007">A synergistic approach to air pollution control and carbon neutrality in China can avoid millions of premature deaths annually by 2060</a></h3>
           <p class="paper-meta"><strong>Cheng, J.</strong>, et al. · <em>One Earth</em> 6, 978–989 (2023)</p>
         </li>
+        <li>
+          <h3 class="paper-title"><a href="https://doi.org/10.1093/nsr/nwab078">Pathways of China's PM<sub>2.5</sub> air quality 2015–2060 in the context of carbon neutrality</a></h3>
+          <p class="paper-meta"><strong>Cheng, J.</strong>, et al. · <em>National Science Review</em> 8, nwab078 (2021)</p>
+        </li>
       </ol>
+      <h3 class="subhead section-divider" id="research-resources">Data and code</h3>
+      <ul class="resource-list" aria-labelledby="research-resources">
+        <li><span class="resource-kind">Data and code · Zenodo</span><a href="https://doi.org/10.5281/zenodo.7383239">China clean-air and carbon-neutrality scenarios</a><p>Scenario data on emissions, PM<sub>2.5</sub> exposure, and associated mortality, with analysis code from the <em>One Earth</em> study.</p></li>
+        <li><span class="resource-kind">Dataset · Zenodo</span><a href="https://zenodo.org/records/20045877">US community air pollution under net-zero pathways</a><p>Data accompanying the study of residual emissions and community-scale air-pollution inequalities.</p></li>
+      </ul>
+      </div>
     </section>
 
     <aside class="tool" aria-labelledby="tool-title">
@@ -154,6 +200,27 @@
       </div>
       <a class="tool-link" href="https://sustainablesolutions.stanford.edu/tools/just-air">Explore the tool</a>
     </aside>
+
+    <section class="section" id="cv" aria-labelledby="cv-title">
+      <h2 id="cv-title">CV</h2>
+      <div class="section-content">
+        <h3 class="subhead" id="appointments">Academic appointments</h3>
+        <ul class="timeline" aria-labelledby="appointments">
+          <li><span class="timeline-date">Mar 2026–present</span><div><h4 class="timeline-title">Assistant Professor and Doctoral Supervisor</h4><span class="timeline-detail">Peking University · College of Environmental Sciences and Engineering</span></div></li>
+          <li><span class="timeline-date">2024–2026</span><div><h4 class="timeline-title">Postdoctoral Scholar</h4><span class="timeline-detail">Stanford University</span></div></li>
+          <li><span class="timeline-date">2022–2024</span><div><h4 class="timeline-title">Postdoctoral Scholar</h4><span class="timeline-detail">University of California, Irvine</span></div></li>
+          <li><span class="timeline-date">Jun–Sep 2019</span><div><h4 class="timeline-title">Visiting Scholar</h4><span class="timeline-detail">Pacific Northwest National Laboratory</span></div></li>
+        </ul>
+        <h3 class="subhead section-divider" id="education">Education</h3>
+        <ul class="timeline" aria-labelledby="education">
+          <li><span class="timeline-date">2017–2022</span><div><h4 class="timeline-title">Ph.D. in Ecology</h4><span class="timeline-detail">Tsinghua University</span></div></li>
+          <li><span class="timeline-date">2013–2017</span><div><h4 class="timeline-title">B.S. in Environmental Science</h4><span class="timeline-detail">Beijing Normal University</span></div></li>
+        </ul>
+        <a class="cv-download" href="jing-cheng-cv.pdf" download>Download academic CV (PDF)</a>
+      </div>
+    </section>
+
+
   </main>
 
   <footer class="footer">
