@@ -169,6 +169,20 @@
     .zh-profile .timeline>li{grid-template-columns:12rem minmax(0,1fr)}
     .zh-profile .recruit{margin-top:2rem}
     @media(max-width:39rem){.zh-topics{grid-template-columns:minmax(0,1fr)}.zh-profile .timeline>li{grid-template-columns:minmax(0,1fr)}}
+
+    /* Chinese profile: one shared content column for cards, diagram, and timeline. */
+    .zh-profile{width:min(100%,64rem);margin-inline:auto}
+    .zh-header{display:grid;grid-template-columns:minmax(0,1fr) auto;align-items:center;gap:.95rem 1.5rem;padding:clamp(1.15rem,3vw,2rem);margin-bottom:clamp(1.65rem,3vw,2.35rem)}
+    .zh-header .cv-download{justify-self:end;margin:0;font-size:.9rem}
+    .zh-profile .zh-lead{max-width:100%;max-width:min(100%,54ic);text-wrap:pretty}
+    .zh-topics{gap:.7rem;margin:1.2rem 0 1.5rem}
+    .zh-topics li{display:grid;grid-template-columns:2ch minmax(0,1fr);gap:.7rem;align-items:baseline;padding:.72rem .94rem;line-height:1.55}
+    .zh-topics li::before{line-height:inherit;font-variant-numeric:tabular-nums}
+    .zh-figure{width:100%;max-width:none;margin:0 0 clamp(2rem,4vw,3.15rem)}
+    .zh-figure figcaption{text-align:center}
+    .zh-profile .timeline{max-width:none}
+    @media(max-width:48rem){.zh-topics{grid-template-columns:minmax(0,1fr)}}
+    @media(max-width:35rem){.zh-header{grid-template-columns:minmax(0,1fr)}.zh-header .cv-download{justify-self:start}}
   </style>
 </head>
 <body id="top">
